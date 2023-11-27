@@ -11,7 +11,7 @@
   --section-mt: 8rem;
   --transition: cubic-bezier(0.25, 0.32, 0.85, 0.58);
   --transition-clr: color 300ms var(--transition);
-  font-size: 10px;
+  font-size: 11px;
 
   /* style for scrollbar */
   scrollbar-width: thin;
@@ -117,11 +117,11 @@ h3 {
 }
 
 .slide-in-top {
-  animation: slide-in-top 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: slide-in-top 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 
 .fade-in {
-  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.6s both;
 }
 
 @keyframes bounce-in-left {
@@ -492,10 +492,10 @@ small {
   font-size: clamp(2rem, 3vw, 4rem);
   font-weight: 500;
   letter-spacing: 5px;
-  color: var(--other-clr);
 }
 
 .project h2 {
+  color: var(--accent-clr);
   padding-block-start: clamp(1.5rem, 2vw, 3rem);
   font-size: clamp(2.5rem, 3vw, 4rem);
 }
@@ -521,7 +521,7 @@ small {
 
 .tech-stack li {
   padding: 0.2rem 0.5rem;
-  background: var(--tag-clr);
+  background: var(--accent-clr);
   border-radius: 2px;
   color: var(--primary-clr);
   font-size: clamp(1.15rem, 1vw, 1.3rem);
@@ -595,6 +595,7 @@ small {
 }
 
 .other-projects h4 {
+  color: var(--accent-clr);
   font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
@@ -732,10 +733,10 @@ small {
   .nav-list {
     flex-direction: column;
     position: absolute;
-    top: 250px;
+    top: 150px;
     left: 50%;
     transform: translate(-50%);
-    height: 100vh;
+    height: 100dvh;
     opacity: 0;
     pointer-events: none;
   }
@@ -744,7 +745,7 @@ small {
     opacity: 0;
     pointer-events: none;
     position: absolute;
-    top: 175px;
+    top: 75px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -813,7 +814,9 @@ small {
   }
 
   .hero img {
-    display: none;
+    width: 250px;
+    height: auto;
+    display: ;
   }
 
   .my-skills ul {
